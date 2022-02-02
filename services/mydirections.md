@@ -15,7 +15,7 @@ https://maps.googleapis.com/maps/api/directions/json
 &mode=walking
 &units=imperial
 &language=fil
-&waypoints=optimize:true|place_id%3AChIJWyfdtDHL1IkR_bal8ay1Cso|place_id%3AChIJmzrzi9Y0K4gRgXUc3sTY7RU
+&waypoints=optimize%3Atrue%7Cplace_id%3AChIJWyfdtDHL1IkR_bal8ay1Cso%7Cplace_id%3AChIJmzrzi9Y0K4gRgXUc3sTY7RU
 &key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 ```
 
