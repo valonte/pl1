@@ -1,77 +1,247 @@
 <!DOCTYPE html>
+
+<!-- 
+Created by Vince Ruel Alonte
+For GEOM 99
+Create a Custom Map to tell your story
+-->
+
 <html>
   <head>
-    <title>Marker Animations With setTimeout()</title>
+    <title>3 Restaurants I Miss.</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
     <style type="text/css">
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
         height: 100%;
+        /* width: 80%;
+        margin-left: auto;
+        margin-right: auto; */
       }
 
       /* Optional: Makes the sample page fill the window. */
       html,
       body {
         height: 100%;
+        width: 100%;
         margin: 0;
         padding: 0;
       }
 
-      #floating-panel {
+      #tcenter{
         position: absolute;
-        top: 10px;
-        left: 25%;
+        width: 100%;
+        margin: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
         z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
+        background-color: #064663;
+        top: 10%;
         text-align: center;
-        font-family: "Roboto", "sans-serif";
-        line-height: 30px;
-        padding-left: 10px;
+        font-family: "Verdana", "sans-serif";
+        color: #ECB365;
       }
 
       #floating-panel {
-        margin-left: -52px;
+        position: absolute;
+        top: 4%;
+        left: 45%;
+        z-index: 5;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* CSS for the button */
+      #drop{
+        font-family: "Roboto", "sans-serif";
+        font-size: 2em;
+      } 
+      #drop:hover {
+        background-color: #064663;
+        color: #ECB365;
+        border: none;
+      }
+
+      /* CSS for the legend block */
+      #stext{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 20%;
+        z-index: 5;
+        background-color: rgba(6, 70, 99, 0.8);
+        text-align: center;
+        font-family: "Roboto", "sans-serif";
+        padding: 1%;
+        margin: 0;
+      }
+
+      /* CSS for the Legend Header, Paragraph and Image */
+      .shead{
+        font-family: "Verdana", "sans-serif";
+        color: #ECB365;
+        padding: 0;
+        margin: 0;
+      }
+
+      .para{
+        font-family: "Verdana", "sans-serif";
+        color: #E2703A;
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      .food {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
       }
     </style>
+
     <script>
+      // There are 3 Templates I used for this Story
+      //   1. The Marker Animation with setTimeout()
+      //     https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration
+      //   2. Styled Maps - Night Mode
+      //     https://developers.google.com/maps/documentation/javascript/examples/style-array
+      //   3. Marker labels
+      //     https://developers.google.com/maps/documentation/javascript/examples/marker-labels
+
+      // My idea was to create an animated marker that dropped with a push of a button
+      // each marker would then be clickable and an info window would pop up.
+      // However, the loop statement in the marker animation was too complex
+      // for me to add the pop up window so I just incorporated the label and made a legend
+
       // If you're adding a number of markers, you may want to drop them on the map
       // consecutively rather than all at once. This example shows how to use
       // window.setTimeout() to space your markers' animation.
+
+      // Changed to my 3 locations
       const neighborhoods = [
-        { lat: 52.511, lng: 13.447 },
-        { lat: 52.549, lng: 13.422 },
-        { lat: 52.497, lng: 13.396 },
-        { lat: 52.517, lng: 13.394 },
+        { lat: 14.3211599, lng: 121.097323 },
+        { lat: 14.4243699, lng: 121.0264266 },
+        { lat: 14.5484763, lng: 121.0479601 },
       ];
+
+      // Added the label constant for marker labels
+      const labels = "ABC";
       let markers = [];
       let map;
 
+
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 12,
-          center: { lat: 52.52, lng: 13.41 },
+          zoom: 11,
+          center: { lat: 14.437, lng: 120.963 },
+
+          // Script to Style the Map to Night Mode
+          styles: [
+      { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+      {
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [{ color: "#263c3f" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#6b9a76" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#38414e" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#212a37" }],
+      },
+      {
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#9ca5b3" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#746855" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#1f2835" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#f3d19c" }],
+      },
+      {
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [{ color: "#2f3948" }],
+      },
+      {
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#17263c" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#515c6d" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#17263c" }],
+      },
+    ]
         });
         document.getElementById("drop").addEventListener("click", drop);
       }
 
+      // Added the labels[i] in the loop for labeling
       function drop() {
         clearMarkers();
 
         for (let i = 0; i < neighborhoods.length; i++) {
-          addMarkerWithTimeout(neighborhoods[i], i * 200);
+          addMarkerWithTimeout(neighborhoods[i], i * 200,labels[i]);
         }
       }
 
-      function addMarkerWithTimeout(position, timeout) {
+      // Added the label variable and property so that each marker will be labeled when the drop function is called
+      function addMarkerWithTimeout(position, timeout,label) {
         window.setTimeout(() => {
           markers.push(
             new google.maps.Marker({
               position: position,
               map,
               animation: google.maps.Animation.DROP,
+              label:label,
             })
           );
         }, timeout);
@@ -86,11 +256,36 @@
       }
     </script>
   </head>
+
   <body>
+    <!-- Website Title -->
+    <h1 id=tcenter>3 Restaurants I Miss in Philippines</h1>
+
+    <!-- Drop marker Button -->
     <div id="floating-panel">
       <button id="drop">Drop Markers</button>
     </div>
+
+    <!-- the Map -->
     <div id="map"></div>
+
+    <!-- the Legend -->
+    <div id="stext">
+        <h2 class="shead">A. Atoy's Porkchop</h2>
+        <!-- image from https://www.facebook.com/atoysporkchoplaguna/photos/a.123531646495411/160483182800257/ -->
+        <img class="food" src="images/Porkchop.jpg" alt="Porkchop">
+        <p class="para">My favorite childhood breakfast, lunch, or dinner. I can eat three servings in one sitting and it's only 3 CAD</p>
+
+        <h2 class="shead">B. Manam</h2>
+        <!-- image from https://www.facebook.com/ManamPH/photos/a.1920631958220752/2882815402002398/ -->
+        <img class="food" src="images/sisig.jpg" alt="Sisig">
+        <p class="para">The best modern version of Sisig to ever exist.</p>
+
+        <h2 class="shead">C. Mendokoro Ramenba</h2>
+        <!-- image from https://www.facebook.com/mendokororamen/photos/a.749448401786940/3894206270644455/?type=3&eid=ARDL82qaJ-zq95ZMjBGyIl5x0rYC6-Osjd9XfCEa5pPdK4Ps9ds8GuKmpWAS3-22RnSAelTDd7X6_N3q -->
+        <img class="food" src="images/ramen.jpg" alt="Super Chasu">
+        <p class="para">This ramen is God Tier better than the one I ate in Japan.</p>
+    </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
