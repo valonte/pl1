@@ -49,7 +49,7 @@ https://maps.googleapis.com/maps/api/directions/json
       {
          "bounds" : {
             "northeast" : {
-               "lat" : 43.6530077,
+               "lat" : 43.6530882,
                "lng" : -79.371782
             },
             "southwest" : {
@@ -65,7 +65,7 @@ https://maps.googleapis.com/maps/api/directions/json
                   "value" : 872
                },
                "duration" : {
-                  "text" : "11 mins",
+                  "text" : "11 min",
                   "value" : 673
                },
                "end_address" : "290 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
@@ -85,7 +85,7 @@ https://maps.googleapis.com/maps/api/directions/json
                         "value" : 375
                      },
                      "duration" : {
-                        "text" : "5 mins",
+                        "text" : "5 min",
                         "value" : 282
                      },
                      "end_location" : {
@@ -94,7 +94,7 @@ https://maps.googleapis.com/maps/api/directions/json
                      },
                      "html_instructions" : "Dumiretso pa-\u003cb\u003ekanluran\u003c/b\u003e sa \u003cb\u003eFront St W\u003c/b\u003e",
                      "polyline" : {
-                        "points" : "cpkiGb_ocNFTRxADT@JDVBTBLBPFXNvAAZLn@Bf@@FTdBBRDTBZF`@@JBVFb@F`@DZBNHn@?BJh@"
+                        "points" : "cpkiGb_ocNFTRxADT@JDVBTBLBPFXNvAAZNn@@f@@FTbBBN@DBVBXF`@@JBVFb@F`@DZBNHn@?BJh@"
                      },
                      "start_location" : {
                         "lat" : 43.6456155,
@@ -108,7 +108,7 @@ https://maps.googleapis.com/maps/api/directions/json
                         "value" : 191
                      },
                      "duration" : {
-                        "text" : "2 mins",
+                        "text" : "2 min",
                         "value" : 131
                      },
                      "end_location" : {
@@ -132,7 +132,7 @@ https://maps.googleapis.com/maps/api/directions/json
                         "value" : 128
                      },
                      "duration" : {
-                        "text" : "2 mins",
+                        "text" : "2 min",
                         "value" : 134
                      },
                      "end_location" : {
@@ -232,7 +232,7 @@ https://maps.googleapis.com/maps/api/directions/json
                   "value" : 1565
                },
                "duration" : {
-                  "text" : "19 mins",
+                  "text" : "19 min",
                   "value" : 1166
                },
                "end_address" : "93 Front St E, Toronto, ON M5E 1C3, Canada",
@@ -275,7 +275,7 @@ https://maps.googleapis.com/maps/api/directions/json
                         "value" : 503
                      },
                      "duration" : {
-                        "text" : "6 mins",
+                        "text" : "6 min",
                         "value" : 356
                      },
                      "end_location" : {
@@ -298,7 +298,7 @@ https://maps.googleapis.com/maps/api/directions/json
                         "value" : 239
                      },
                      "duration" : {
-                        "text" : "3 mins",
+                        "text" : "3 min",
                         "value" : 174
                      },
                      "end_location" : {
@@ -346,7 +346,7 @@ https://maps.googleapis.com/maps/api/directions/json
                         "value" : 701
                      },
                      "duration" : {
-                        "text" : "9 mins",
+                        "text" : "9 min",
                         "value" : 544
                      },
                      "end_location" : {
@@ -356,7 +356,7 @@ https://maps.googleapis.com/maps/api/directions/json
                      "html_instructions" : "Lumiko \u003cb\u003epakanan\u003c/b\u003e patungo sa \u003cb\u003eFront St W\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eAng patutunguhan ay nasa kanan\u003c/div\u003e",
                      "maneuver" : "turn-right",
                      "polyline" : {
-                        "points" : "arkiGjvncN?[WgCG[EYI]IYGSM]MUKWKOMQKMi@g@CUGOAEGKIUCISYO_@KMSe@Me@s@oBMWq@iBKYEIQm@Qc@W]K]Si@?M[gAGYIWEQMc@EOKQMUGSI_@CI"
+                        "points" : "arkiGjvncN?[WgCG[EYI]IYGSM]MUKWKOMQKMi@s@KYAEGKIUCISYO_@KMSe@Me@s@oBMWq@iBKYEIQm@Qc@W]K]Si@?M[gAGYIWEQMc@EOKQMUGSI_@CI"
                      },
                      "start_location" : {
                         "lat" : 43.64592589999999,
@@ -370,17 +370,17 @@ https://maps.googleapis.com/maps/api/directions/json
             },
             {
                "distance" : {
-                  "text" : "0.9 mi",
-                  "value" : 1399
+                  "text" : "0.8 mi",
+                  "value" : 1317
                },
                "duration" : {
-                  "text" : "19 mins",
-                  "value" : 1122
+                  "text" : "18 min",
+                  "value" : 1083
                },
                "end_address" : "100 Queen St W, Toronto, ON M5H 2N1, Canada",
                "end_location" : {
-                  "lat" : 43.6530077,
-                  "lng" : -79.3827699
+                  "lat" : 43.6518419,
+                  "lng" : -79.3826469
                },
                "start_address" : "93 Front St E, Toronto, ON M5E 1C3, Canada",
                "start_location" : {
@@ -390,20 +390,20 @@ https://maps.googleapis.com/maps/api/directions/json
                "steps" : [
                   {
                      "distance" : {
-                        "text" : "0.2 mi",
-                        "value" : 242
+                        "text" : "0.1 mi",
+                        "value" : 181
                      },
                      "duration" : {
-                        "text" : "3 mins",
-                        "value" : 191
+                        "text" : "2 min",
+                        "value" : 135
                      },
                      "end_location" : {
-                        "lat" : 43.6481876,
-                        "lng" : -79.3744653
+                        "lat" : 43.6485024,
+                        "lng" : -79.3739001
                      },
                      "html_instructions" : "Dumiretso pa-\u003cb\u003etimog-kanluran\u003c/b\u003e sa \u003cb\u003eFront St E\u003c/b\u003e patungong \u003cb\u003eMarket St.\u003c/b\u003e",
                      "polyline" : {
-                        "points" : "kfliGrhmcNBHH^FRLTJPDNLb@DPHVFXZfA?LRh@J\\V\\g@L\\|@RXJX"
+                        "points" : "kfliGrhmcNBHH^FRLTJPDNLb@DPHVFXZfA?LRh@J\\V\\g@L"
                      },
                      "start_location" : {
                         "lat" : 43.64918,
@@ -413,121 +413,73 @@ https://maps.googleapis.com/maps/api/directions/json
                   },
                   {
                      "distance" : {
-                        "text" : "203 ft",
-                        "value" : 62
+                        "text" : "0.3 mi",
+                        "value" : 551
                      },
                      "duration" : {
-                        "text" : "1 min",
-                        "value" : 45
+                        "text" : "8 min",
+                        "value" : 473
                      },
                      "end_location" : {
-                        "lat" : 43.6480118,
-                        "lng" : -79.3750603
+                        "lat" : 43.6530882,
+                        "lng" : -79.37583819999999
                      },
-                     "html_instructions" : "Lumiko \u003cb\u003epakanan\u003c/b\u003e papunta sa \u003cb\u003eWellington St E\u003c/b\u003e",
+                     "html_instructions" : "Lumiko \u003cb\u003epakanan\u003c/b\u003e patungo sa \u003cb\u003eChurch St\u003c/b\u003e",
                      "maneuver" : "turn-right",
                      "polyline" : {
-                        "points" : "e`liGlymcNA?DRBL@D@DVfA"
+                        "points" : "cbliGzumcNE@]NgBj@SFm@RGBs@R_@LE?u@VUPS?]JOFgA\\_@L_Bf@]J{Af@E@[Jk@PI@IBMDOFUH"
                      },
                      "start_location" : {
-                        "lat" : 43.6481876,
-                        "lng" : -79.3744653
-                     },
-                     "travel_mode" : "WALKING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "26 ft",
-                        "value" : 8
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 6
-                     },
-                     "end_location" : {
-                        "lat" : 43.6480876,
-                        "lng" : -79.375112
-                     },
-                     "html_instructions" : "Lumiko \u003cb\u003epakanan\u003c/b\u003e papunta sa \u003cb\u003eWellington St E\u003c/b\u003e",
-                     "maneuver" : "turn-right",
-                     "polyline" : {
-                        "points" : "a_liGb}mcNG@GF"
-                     },
-                     "start_location" : {
-                        "lat" : 43.6480118,
-                        "lng" : -79.3750603
-                     },
-                     "travel_mode" : "WALKING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "226 ft",
-                        "value" : 69
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 50
-                     },
-                     "end_location" : {
-                        "lat" : 43.6481041,
-                        "lng" : -79.3758168
-                     },
-                     "html_instructions" : "Lumiko \u003cb\u003epakaliwa\u003c/b\u003e papunta sa \u003cb\u003eWellington St E\u003c/b\u003e",
-                     "maneuver" : "turn-left",
-                     "polyline" : {
-                        "points" : "q_liGl}mcNAHAH@HBJAB?BD|@?BA@CRAB"
-                     },
-                     "start_location" : {
-                        "lat" : 43.6480876,
-                        "lng" : -79.375112
-                     },
-                     "travel_mode" : "WALKING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "0.2 mi",
-                        "value" : 324
-                     },
-                     "duration" : {
-                        "text" : "4 mins",
-                        "value" : 259
-                     },
-                     "end_location" : {
-                        "lat" : 43.6474437,
-                        "lng" : -79.3796361
-                     },
-                     "html_instructions" : "Lumiko \u003cb\u003epakaliwa\u003c/b\u003e patungo sa \u003cb\u003eWellington St E\u003c/b\u003e",
-                     "maneuver" : "turn-left",
-                     "polyline" : {
-                        "points" : "s_liGzancNF^BX^tCD\\Fh@Ff@[LNdABXNbA@Nh@|DHn@BJ"
-                     },
-                     "start_location" : {
-                        "lat" : 43.6481041,
-                        "lng" : -79.3758168
+                        "lat" : 43.6485024,
+                        "lng" : -79.3739001
                      },
                      "travel_mode" : "WALKING"
                   },
                   {
                      "distance" : {
                         "text" : "0.4 mi",
-                        "value" : 694
+                        "value" : 574
                      },
                      "duration" : {
-                        "text" : "10 mins",
-                        "value" : 571
+                        "text" : "8 min",
+                        "value" : 466
                      },
                      "end_location" : {
-                        "lat" : 43.6530077,
-                        "lng" : -79.3827699
+                        "lat" : 43.6518419,
+                        "lng" : -79.3826469
                      },
-                     "html_instructions" : "Lumiko \u003cb\u003epakanan\u003c/b\u003e patungo sa \u003cb\u003eBay St.\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eAng patutunguhan ay nasa kanan\u003c/div\u003e",
-                     "maneuver" : "turn-right",
+                     "html_instructions" : "Lumiko \u003cb\u003epakaliwa\u003c/b\u003e patungo sa \u003cb\u003eQueen St E\u003c/b\u003e",
+                     "maneuver" : "turn-left",
                      "polyline" : {
-                        "points" : "o{kiGvyncN[HWJQD[JYHQDuAb@a@Ry@Ta@N}Af@KBUHa@JQDOD}@XYLUHoA^[LeBf@MBWt@GVG\\EJAB?@A@A@A@GFGBq@REByAb@Fj@GBMD"
+                        "points" : "y~liG~ancNFZFj@Hh@Fb@DV?F@@Jp@d@vDFj@j@dEFf@[VJt@B^BNDXVrBFZHl@Hl@DVLdANp@NfAKZF\\"
                      },
                      "start_location" : {
-                        "lat" : 43.6474437,
-                        "lng" : -79.3796361
+                        "lat" : 43.6530882,
+                        "lng" : -79.37583819999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "36 ft",
+                        "value" : 11
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 43.6518419,
+                        "lng" : -79.3826469
+                     },
+                     "html_instructions" : "Lumiko \u003cb\u003epakanan\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eAng patutunguhan ay nasa kaliwa\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "_wliGplocN"
+                     },
+                     "start_location" : {
+                        "lat" : 43.6518419,
+                        "lng" : -79.3826469
                      },
                      "travel_mode" : "WALKING"
                   }
@@ -537,7 +489,7 @@ https://maps.googleapis.com/maps/api/directions/json
             }
          ],
          "overview_polyline" : {
-            "points" : "cpkiGb_ocNb@pCPlAVpBAZLn@Dn@XxBR~AXxBXlBjCw@xAe@d@Qf@KVtBFt@C?Km@CCC?]FN`ALt@?N@\\@BRf@A^Ar@B`@Fj@Hn@Io@Gk@Ca@@s@@_@Sg@ACAE?g@Mu@UoBGi@[][_@MOYFoA\\AAIm@}AwLKg@c@JIm@]HESwAoMEa@e@NIBIS?[WgCMu@Sw@Uq@Ym@Ya@u@u@Ke@Wq@SYO_@KMSe@aAuC_AaCu@uBW]K]Si@?Mc@aBOi@Ss@Yg@Qs@CIBHPr@Xf@b@|Ab@`B?LRh@J\\V\\g@L\\|@RXJXBR^`BOHCRDTAFD`AETDb@b@nDLfAFf@[LR~APrAr@lFBJ[Hi@Pu@TgBh@{Ah@aDdAaCp@o@VkBl@sBj@_@lAOn@MLyC~@Fj@GBMD"
+            "points" : "cpkiGb_ocNb@pCPlAVpBAZNn@Bn@XrBPxAThBR~AJh@LCjA]~Bw@`@Mb@KRG?FL|@RdBE?Km@CCa@F\\~B?`@Vn@C|@@h@RhBSiBAi@B}@Wo@?a@]_CMwAa@e@_@e@GAMBuA`@CACOaBgMKu@c@JCAGk@YHA?A?AEoAaLQ}Ao@RIS?[_@cDOw@Qm@s@{AY_@i@s@KYIQM_@SYO_@KMSe@aAuC_AaCu@uBW]K]Si@?Mc@aBOi@Ss@Yg@Qs@CIBHPr@Xf@b@|Ab@`B?LRh@J\\V\\m@NgEvAaBd@u@VUPS?]JwAd@_Ct@{C`AmA\\e@PNfAVlBz@vGr@lF[VJt@Fn@\\lC`@nC\\vBNfAKZF\\"
          },
          "summary" : "Front St W",
          "warnings" : [
@@ -548,6 +500,7 @@ https://maps.googleapis.com/maps/api/directions/json
    ],
    "status" : "OK"
 }
+
 
 ```
 ____
